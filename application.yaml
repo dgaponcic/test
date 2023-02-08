@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://dgaponcic.github.io/test.git
+    repoURL: https://github.com/dgaponcic/test.git
   destination:
     server: https://kubernetes.default.svc
     namespace: default
