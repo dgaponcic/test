@@ -1,36 +1,36 @@
-# apiVersion: v1
-# kind: Pod
-# metadata:
-#   labels:
-#     run: ubuntu
-#   name: {{ .Values.name1 }}
-# spec:
-#   containers:
-#   - image: ubuntu
-#     env:
-#     - name: DEMO_GREETING
-#       value: {{ .Values.testvalue }}
-#     name: {{ .Values.name1 }}
-#     command: ["sleep", "inf"]
-#     resources: {}
-#   dnsPolicy: ClusterFirst
-#   restartPolicy: Always
-
-
 apiVersion: v1
 kind: Pod
 metadata:
   labels:
     run: ubuntu
-  name: please
+  name: {{ .Values.name }}
 spec:
   containers:
   - image: ubuntu
     env:
     - name: DEMO_GREETING
-      value: <path:kv/data/test-secret#foo>
-    name: test
+      value: {{ .Values.testvalue }}
+    name: {{ .Values.name }}
     command: ["sleep", "inf"]
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
+
+
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   labels:
+#     run: ubuntu
+#   name: please
+# spec:
+#   containers:
+#   - image: ubuntu
+#     env:
+#     - name: DEMO_GREETING
+#       value: <path:kv/data/test-secret#foo>
+#     name: test
+#     command: ["sleep", "inf"]
+#     resources: {}
+#   dnsPolicy: ClusterFirst
+#   restartPolicy: Always
