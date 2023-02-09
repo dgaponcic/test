@@ -1,2 +1,3 @@
 #name: "<path:kv/data/test-secret#foo>"
 name: test
+test-value: "<path:kv/data/test-secret#foo>"
