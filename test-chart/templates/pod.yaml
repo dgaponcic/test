@@ -3,14 +3,14 @@ kind: Pod
 metadata:
   labels:
     run: ubuntu
-  name: {{ .Values.name }}
+  name: {{ .Values.name1 }}
 spec:
   containers:
   - image: ubuntu
     env:
     - name: DEMO_GREETING
       value: {{ .Values.testvalue }}
-    name: {{ .Values.name }}
+    name: {{ .Values.name1 }}
     command: ["sleep", "inf"]
     resources: {}
   dnsPolicy: ClusterFirst
