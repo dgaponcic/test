@@ -1,3 +1,5 @@
 #name: "<path:kv/data/test-secret#foo>"
 name: test
-testvalue: "<path:kv/data/test-secret#foo>"
+testvalue1: "<path:kv/data/test-secret#foo>"
+testvalue2: "<foo>"
+avp_path: "kv/data/test-secret"
