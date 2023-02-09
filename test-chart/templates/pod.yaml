@@ -22,7 +22,7 @@ kind: Pod
 metadata:
   labels:
     run: ubuntu
-  name: test
+  name: please
 spec:
   containers:
   - image: ubuntu
