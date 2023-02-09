@@ -1,5 +1,6 @@
 #name: "<path:kv/data/test-secret#foo>"
 name: test
+name1: pleasework
 testvalue: "<path:kv/data/test-secret#foo>"
 testvalue2: "<foo>"
 avppath: "kv/data/test-secret"
