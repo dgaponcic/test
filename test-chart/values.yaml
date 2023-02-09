@@ -1,2 +1,2 @@
-name: "<path:kv/data/test-secret#foo>"
-#name: test
+#name: "<path:kv/data/test-secret#foo>"
+name: test
