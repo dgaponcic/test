@@ -10,7 +10,7 @@ spec:
     env:
     - name: DEMO_GREETING
       value: {{ .Values.name }}
-    name: {{ .Values.test-value }}
+    name: {{ .Values.testvalue }}
     command: ["sleep", "inf"]
     resources: {}
   dnsPolicy: ClusterFirst
