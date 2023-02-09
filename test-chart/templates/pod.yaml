@@ -7,9 +7,11 @@ metadata:
 spec:
   containers:
   - image: ubuntu
-    name: {{ .Values.name }}
+    env:
+    - name: DEMO_GREETING
+      value: {{ .Values.name }}
+    name: {{ .Values.test-value }}
     command: ["sleep", "inf"]
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
-
