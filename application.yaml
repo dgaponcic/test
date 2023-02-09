@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-chart
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    namespace: test-chart
+    server: https://kubernetes.default.svc
+  source:
+    helm:
+      releaseName: test-chart
+      valueFiles:
+      - values.yaml
+    repoURL: https://github.com/dgaponcic/test.git
+    targetRevision: master
+    path: test-chart
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+

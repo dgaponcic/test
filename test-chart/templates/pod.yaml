@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: ubuntu
+  name: {{ .Values.name }}
+spec:
+  containers:
+  - image: ubuntu
+    name: {{ .Values.name }}
+    command: ["sleep", "inf"]
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+
