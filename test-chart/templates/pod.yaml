@@ -11,9 +11,9 @@ spec:
     - name: DEMO_GREETING
       value: {{ .Values.testvalue }}
     - name: DEMO_GREETING2
-      value: <path:kv/data/test-secret#foo>
+      value: <path:kv/data/test-secret#foo2>
     - name: DEMO_GREETING3
-      value: <path:kv/data/test-secret/test#yay>
+      value: <path:kv/data/test-secret/test#yay2>
     name: {{ .Values.name }}
     command: ["sleep", "inf"]
     resources: {}
