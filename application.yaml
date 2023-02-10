@@ -9,12 +9,9 @@ spec:
     namespace: test-chart
     server: https://kubernetes.default.svc
   source:
-    helm:
-      releaseName: test-chart
-      valueFiles:
-      - values.yaml
     repoURL: https://github.com/dgaponcic/test.git
     targetRevision: master
+    plugin: {}
     path: test-chart
   syncPolicy:
     automated:
@@ -22,4 +19,3 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-
