@@ -8,33 +8,10 @@ spec:
   containers:
   - image: ubuntu
     env:
-    - name: DEMO_GREETING
+    - name: TEST_VALUE
       value: {{ .Values.testvalue }}
-    - name: DEMO_GREETING2
-      value: <path:kv/data/test-secret2#foo2>
-    - name: DEMO_GREETING3
-      value: <path:kv/data/test-secret/test2#yay2>
     name: {{ .Values.name }}
     command: ["sleep", "inf"]
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
-
-
-# apiVersion: v1
-# kind: Pod
-# metadata:
-#   labels:
-#     run: ubuntu
-#   name: please
-# spec:
-#   containers:
-#   - image: ubuntu
-#     env:
-#     - name: DEMO_GREETING
-#       value: <path:kv/data/test-secret#foo>
-#     name: test
-#     command: ["sleep", "inf"]
-#     resources: {}
-#   dnsPolicy: ClusterFirst
-#   restartPolicy: Always
