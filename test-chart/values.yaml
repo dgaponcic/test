@@ -1,2 +1,2 @@
 name: please-work
-testvalue: "<path:kv/data/test-secret#foo>"
+testvalue: "<path:kv/data/test-secret2#foo>"
