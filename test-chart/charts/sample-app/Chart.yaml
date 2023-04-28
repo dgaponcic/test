@@ -15,9 +15,7 @@ maintainers:
 name: sample-app
 type: application
 version: 0.1.0
-# dependencies:
-  #  - repository: https://charts.bitnami.com/bitnami
-  #  name: mysql
-  #  version: 9.8.2
-
-
+dependencies:
+  - repository: https://charts.bitnami.com/bitnami
+    name: mysql
+    version: 9.8.2
