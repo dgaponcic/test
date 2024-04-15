@@ -1,4 +1,4 @@
 name: please-work
-# testvalue: "<path:kv/data/test-secret2#foo>"
-testvalue: "hehe"
+testvalue: "<path:kv/data/test-secret2#foo>"
+# testvalue: "hehe"
 # somestringtobreakthevaluesfiles
