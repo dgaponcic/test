@@ -22,3 +22,4 @@ spec:
         name: {{ .Values.name }}
         command: ["sleep", "inf"]
         resources: {}
+      revisionHistoryLimit: 0
