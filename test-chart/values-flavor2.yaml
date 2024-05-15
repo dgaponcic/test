@@ -1,1 +1,2 @@
 name: vals-flavor-test
+replicas: 3
