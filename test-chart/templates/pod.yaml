@@ -5,6 +5,7 @@ metadata:
   labels:
     run: ubuntu
 spec:
+  revisionHistoryLimit: 0
   replicas: 1
   selector:
     matchLabels:
@@ -22,4 +23,3 @@ spec:
         name: {{ .Values.name }}
         command: ["sleep", "inf"]
         resources: {}
-      revisionHistoryLimit: 0
