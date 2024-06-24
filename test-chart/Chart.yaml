@@ -25,7 +25,7 @@ appVersion: "1.16.0"
 dependencies:
   # - name: sample-app
   #   version: 0.1.0
-  #   repository: https://mongodb.github.io/helm-charts
+  #   repository: https://mongodb.githusb.io/helm-charts
   - repository: https://charts.bitnami.com/bitnami
     name: mysql
     version: 9.8.2
