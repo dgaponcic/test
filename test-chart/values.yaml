@@ -1,5 +1,5 @@
 name: please-work
-testvalue: 3
+testvalue: test
 replicas: 1
 # testvalue: "hehe"
 # somestringtobreakthevaluesfiles
