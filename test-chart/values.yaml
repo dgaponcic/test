@@ -1,5 +1,5 @@
 name: please-work
-testvalue: "<path:kv/data/test-secret#foo>"
+testvalue: 3
 replicas: 1
 # testvalue: "hehe"
 # somestringtobreakthevaluesfiles
