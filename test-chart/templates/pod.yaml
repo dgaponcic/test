@@ -17,7 +17,7 @@ spec:
         run: ubuntu
     spec:
       containers:
-      - image: ubuntu
+      - image: docker.io/library/ubuntu
         env:
         - name: TEST_VALUE
           value: {{ .Values.testvalue }}
